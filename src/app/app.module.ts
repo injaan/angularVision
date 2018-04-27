@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { Camera } from '../modules/camera';
+import { MobileNet } from '../modules/mobilenet';
 
 
 import { AppComponent } from './app.component';
@@ -12,7 +14,10 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    Camera,
+    MobileNet
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
